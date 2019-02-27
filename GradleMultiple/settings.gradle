@@ -1,0 +1,8 @@
+rootProject.name = "GradleMultiple"
+
+include ":sub1"
+include ":sub2"
+include ":sub3"
+project(":sub1").projectDir = file("sub1")
+project(":sub2").projectDir = file("sub2")
+project(":sub3").projectDir = file("sub3")

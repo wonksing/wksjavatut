@@ -1,0 +1,27 @@
+plugins {
+	id 'java-library'
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-lang3:3.4'
+}
+
+sourceSets {
+    main {
+         java {
+            srcDirs = ['src/main/java']
+         }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+jar {
+  manifest {
+    attributes(
+      'Class-Path': configurations.compile.collect { it.getName() }.join(' ')
+    )
+  }
+}
