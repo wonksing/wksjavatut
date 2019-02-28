@@ -7,5 +7,7 @@ public class App {
     public static void main(String[] args){
         System.out.println("first multiple");
         Sub2Utils.Say();
+        Sub2Utils.Say();
+        
     }
 }
