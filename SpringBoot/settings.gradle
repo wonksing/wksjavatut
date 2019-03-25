@@ -1,0 +1,5 @@
+rootProject.name = "SpringBoot"
+
+include ":SpringBootMain"
+
+project(":SpringBootMain").projectDir = file("SpringBootMain")
